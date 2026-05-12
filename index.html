@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>История гоночных серий</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="home-hero">
+      <div class="home-video-layer" data-video-cycle aria-hidden="true">
+        <video muted loop playsinline preload="metadata" class="is-active" data-video-series="f1">
+          <source
+            src="https://upload.wikimedia.org/wikipedia/commons/1/1e/2021_Russian_Grand_Prix_-_start_for_warm-up.webm"
+            type="video/webm"
+          />
+        </video>
+        <video muted loop playsinline preload="metadata" data-video-series="f1">
+          <source
+            src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Red_Bull_Racing_Pit_Stop_Practice.webm"
+            type="video/webm"
+          />
+        </video>
+        <video muted loop playsinline preload="metadata" data-video-series="wec">
+          <source
+            src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Ken_Miles_Le_Mans_1966.webm"
+            type="video/webm"
+          />
+        </video>
+        <video muted loop playsinline preload="metadata" data-video-series="wrc">
+          <source
+            src="https://upload.wikimedia.org/wikipedia/commons/8/82/WRC_Croatia_2022_-_day_1.webm"
+            type="video/webm"
+          />
+        </video>
+      </div>
+
+      <main class="home-content">
+        <h1>История гоночных серий</h1>
+
+        <nav class="series-cards" aria-label="Выбор чемпионата">
+          <a class="series-card f1" href="f1.html" data-bg-series="f1">
+            <h2>Formula 1</h2>
+            <div class="series-card-body">
+              <p>Чемпионат мира Формулы-1 стартовал в 1950 году в Сильверстоуне.</p>
+              <p>
+                За 75 лет серия прошла путь от дорожных трасс и 350-сильных моторов до 24 гонок в
+                сезоне и установок мощнее 1000 л.с. Эта серия стала одной из самых популярных и
+                престижных в мире.
+              </p>
+            </div>
+            <span class="go">Подробнее →</span>
+          </a>
+          <a class="series-card wec" href="wec.html" data-bg-series="wec">
+            <h2>FIA World Endurance Championship</h2>
+            <div class="series-card-body">
+              <p>
+                Гонки на выносливость стартовали задолго до WEC: 24 часа Ле-Мана проводятся с 1923
+                года. Сам чемпионат мира FIA по выносливости (WEC) запущен в 2012 году — он
+                объединил этапы вроде Себринга, Спа и Ле-Мана.
+              </p>
+              <p>
+                Классы машин менялись от LMGT и LMP до современных Hypercar и LMGT3.
+              </p>
+            </div>
+            <span class="go">Подробнее →</span>
+          </a>
+          <a class="series-card wrc" href="wrc.html" data-bg-series="wrc">
+            <h2>FIA World Rally Championship</h2>
+            <div class="series-card-body">
+              <p>
+                Чемпионат мира по ралли существует с 1973 года. До этого были отдельные гонки вроде
+                Монте-Карло (1911).
+              </p>
+              <p>
+                Пик технической свободы — Group B (1982–1986), закрыта из-за высокой аварийности.
+                Сменившая её Group A (1987–1996) сделала борьбу плотнее и безопаснее.
+              </p>
+            </div>
+            <span class="go">Подробнее →</span>
+          </a>
+        </nav>
+
+        <section class="home-quiz" aria-labelledby="home-quiz-title" data-home-quiz>
+          <h2 id="home-quiz-title">Викторина по сайту</h2>
+          <p class="quiz-progress" data-quiz-progress aria-live="polite"></p>
+          <p class="quiz-question" id="home-quiz-q" data-quiz-question></p>
+          <div class="quiz-options" data-quiz-options role="group" aria-labelledby="home-quiz-q"></div>
+          <div class="quiz-actions" data-quiz-actions>
+            <button type="button" class="quiz-next" data-quiz-next hidden>Следующий вопрос</button>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="js/home-videos.js"></script>
+    <script src="js/home-quiz.js"></script>
+  </body>
+</html>

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ru" class="page-wec">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WEC — таймлайн</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header-inner">
+        <a class="brand" href="index.html">Начальная страница</a>
+        <a class="back-link" href="index.html">← На главную</a>
+      </div>
+    </header>
+
+    <div class="series-hero-video">
+      <video muted loop autoplay playsinline preload="metadata">
+        <source
+          src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Daytona24lamborgini.webm"
+          type="video/webm"
+        />
+      </video>
+    </div>
+
+    <section class="series-intro">
+      <h1>FIA World Endurance Championship</h1>
+      <p>
+        Гонки на выносливость стартовали задолго до WEC: 24 часа Ле-Мана проводятся с 1923 года.
+        Сам чемпионат мира FIA по выносливости (WEC) запущен в 2012 году — он объединил этапы вроде
+        Себринга, Спа и Ле-Мана.
+      </p>
+      <p>
+        Классы машин менялись от LMGT и LMP до современных Hypercar и LMGT3.
+      </p>
+    </section>
+
+    <div class="series-body">
+      <p class="section-label">Таймлайн</p>
+
+      <div class="timeline-wrap" data-timeline>
+        <div class="timeline-rail">
+          <div class="timeline-track">
+            <div class="timeline-line" aria-hidden="true"></div>
+            <div class="timeline-dots" data-timeline-dots></div>
+          </div>
+        </div>
+        <article class="timeline-panel" data-timeline-panel></article>
+      </div>
+    </div>
+
+    <section class="f1-compare" aria-labelledby="wec-compare-title" data-wec-compare>
+      <div class="f1-compare-inner">
+        <p class="section-label">Техника</p>
+        <h2 id="wec-compare-title">Тогда и сейчас</h2>
+        <p class="f1-compare-lead">
+          Выберите два года прямо в таблице, чтобы сопоставить разные эпохи выносливости.
+        </p>
+
+        <div class="f1-compare-table-wrap">
+          <table class="f1-compare-table">
+            <caption class="visually-hidden">
+              Сравнение выбранного года с две тысячи двадцать пятым годом
+            </caption>
+            <tbody data-wec-compare-tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrc-teams" aria-labelledby="wec-teams-title" data-wrc-carousel>
+      <div class="wrc-teams-inner">
+        <p class="section-label">Команды</p>
+        <h2 id="wec-teams-title">Сильнейшие команды WEC</h2>
+        <div class="wrc-carousel">
+          <button
+            type="button"
+            class="wrc-carousel-btn"
+            data-wrc-carousel-prev
+            aria-label="Предыдущая команда"
+          >
+            ←
+          </button>
+          <div class="wrc-carousel-viewport">
+            <div class="wrc-carousel-track" data-wrc-carousel-track>
+              <article class="wrc-team-slide" data-wrc-carousel-slide>
+                <header class="wrc-team-head">
+                  <img
+                    class="wrc-team-logo"
+                    src="img/wec-logos/toyota.svg"
+                    width="160"
+                    height="56"
+                    alt="Официальный логотип Toyota"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <h3 class="wrc-team-name">Toyota Gazoo Racing</h3>
+                </header>
+                <div class="wrc-team-about">
+                  <p>
+                    Заводская программа Toyota в WEC с 2012 года: сначала гибридный TS050, затем
+                    Hypercar GR010 — постоянный претендент на титул и победы в Лё-Мане.
+                  </p>
+                  <p>
+                    Команда выигрывала чемпионат среди команд и среди производителей, задавая
+                    планку надёжности на длинной дистанции.
+                  </p>
+                </div>
+                <div class="wrc-team-block">
+                  <h4 class="wrc-team-label">Пилоты</h4>
+                  <p class="wrc-team-pilots">
+                    Себастьен Буэми<br />
+                    Казуки Накадзима<br />
+                    Фернандо Алонсо<br />
+                    Камуи Кобаяси<br />
+                    Майк Конуэй<br />
+                    Брендон Хартли<br />
+                    Рё Хиракава
+                  </p>
+                </div>
+                <div class="wrc-team-block">
+                  <h4 class="wrc-team-label">Титулы</h4>
+                  <p class="wrc-team-titles">
+                    Многократные чемпионы FIA WEC и победители 24 часов Лё-Мана
+                  </p>
+                </div>
+              </article>
+              <article class="wrc-team-slide" data-wrc-carousel-slide aria-hidden="true">
+                <header class="wrc-team-head">
+                  <img
+                    class="wrc-team-logo"
+                    src="img/wec-logos/porsche.svg"
+                    width="160"
+                    height="32"
+                    alt="Официальный логотип Porsche"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <h3 class="wrc-team-name">Porsche Penske Motorsport</h3>
+                </header>
+                <div class="wrc-team-about">
+                  <p>
+                    Заводской Porsche в выносливости: эра 919 Hybrid в WEC и возвращение к
+                    вершине класса с прототипом 963 и партнёрством Penske.
+                  </p>
+                  <p>
+                    Три подряд победы в Лё-Мане у 919 и борьба за титулы в эпоху Hypercar.
+                  </p>
+                </div>
+                <div class="wrc-team-block">
+                  <h4 class="wrc-team-label">Пилоты</h4>
+                  <p class="wrc-team-pilots">
+                    Марк Уэббер<br />
+                    Брендон Хартли<br />
+                    Тимо Бернхард<br />
+                    Андре Лоттерер<br />
+                    Нил Яни<br />
+                    Эрл Бамбер
+                  </p>
+                </div>
+                <div class="wrc-team-block">
+                  <h4 class="wrc-team-label">Титулы</h4>
+                  <p class="wrc-team-titles">
+                    Чемпионы мира FIA WEC (919 Hybrid); победы и подиумы в Лё-Мане в разные годы
+                  </p>
+                </div>
+              </article>
+              <article class="wrc-team-slide" data-wrc-carousel-slide aria-hidden="true">
+                <header class="wrc-team-head">
+                  <img
+                    class="wrc-team-logo"
+                    src="img/wec-logos/ferrari.svg"
+                    width="160"
+                    height="36"
+                    alt="Официальный логотип Ferrari"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <h3 class="wrc-team-name">Ferrari AF Corse</h3>
+                </header>
+                <div class="wrc-team-about">
+                  <p>
+                    AF Corse много лет представляет Ferrari в GT; с прототипом 499P марка вернулась
+                    в борьбу за общий зачёт в WEC и Лё-Мане.
+                  </p>
+                  <p>
+                    Первая победа Ferrari в общем зачёте 24 часов Лё-Мана с 1965 года — в 2023-м.
+                  </p>
+                </div>
+                <div class="wrc-team-block">
+                  <h4 class="wrc-team-label">Пилоты</h4>
+                  <p class="wrc-team-pilots">
+                    Джеймс Каладо<br />
+                    Алессандро Пьер Гвиди<br />
+                    Антонио Джовинацци<br />
+                    Мигель Молина<br />
+                    Никлас Нильсен
+                  </p>
+                </div>
+                <div class="wrc-team-block">
+                  <h4 class="wrc-team-label">Титулы</h4>
+                  <p class="wrc-team-titles">Победители 24 ч Лё-Мана 2023; борьба за титулы WEC</p>
+                </div>
+              </article>
+              <article class="wrc-team-slide" data-wrc-carousel-slide aria-hidden="true">
+                <header class="wrc-team-head">
+                  <img
+                    class="wrc-team-logo"
+                    src="img/wec-logos/audi.svg"
+                    width="160"
+                    height="56"
+                    alt="Официальный логотип Audi"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <h3 class="wrc-team-name">Audi Sport Team Joest</h3>
+                </header>
+                <div class="wrc-team-about">
+                  <p>
+                    Audi и команда Joest доминировали в LMP1 с дизельными и гибридными R18:
+                    серия побед в Лё-Мане и чемпионаты WEC до ухода марки из прототипов.
+                  </p>
+                  <p>
+                    Эталон командной работы, стратегии топлива и ночных смен в 2010-х.
+                  </p>
+                </div>
+                <div class="wrc-team-block">
+                  <h4 class="wrc-team-label">Пилоты</h4>
+                  <p class="wrc-team-pilots">
+                    Том Кристенсен<br />
+                    Аллан Макниш<br />
+                    Луик Дюваль<br />
+                    Марсель Фесслер<br />
+                    Андре Лоттерер<br />
+                    Бенуа Трелюйер
+                  </p>
+                </div>
+                <div class="wrc-team-block">
+                  <h4 class="wrc-team-label">Титулы</h4>
+                  <p class="wrc-team-titles">
+                    13 побед в Лё-Мане у Audi; чемпионы мира FIA WEC в эру LMP1
+                  </p>
+                </div>
+              </article>
+              <article class="wrc-team-slide" data-wrc-carousel-slide aria-hidden="true">
+                <header class="wrc-team-head">
+                  <img
+                    class="wrc-team-logo"
+                    src="img/wec-logos/peugeot.svg"
+                    width="160"
+                    height="56"
+                    alt="Официальный логотип Peugeot"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <h3 class="wrc-team-name">Peugeot TotalEnergies</h3>
+                </header>
+                <div class="wrc-team-about">
+                  <p>
+                    Заводской Peugeot вернулся в верхний класс WEC с необычным 9X8 и ливреей
+                    TotalEnergies, ориентируясь на технологии и длинную дистанцию.
+                  </p>
+                  <p>
+                    Команда борется за подиумы в Hypercar и развивает программу вместе с опытными
+                    пилотами.
+                  </p>
+                </div>
+                <div class="wrc-team-block">
+                  <h4 class="wrc-team-label">Пилоты</h4>
+                  <p class="wrc-team-pilots">
+                    Пол ди Реста<br />
+                    Жан-Эрик Вернь<br />
+                    Миккель Йенсен<br />
+                    Луик Дюваль<br />
+                    Стофель Вандорн
+                  </p>
+                </div>
+                <div class="wrc-team-block">
+                  <h4 class="wrc-team-label">Титулы</h4>
+                  <p class="wrc-team-titles">Заводская программа Hypercar с 2022 года; подиумы WEC</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="wrc-carousel-btn"
+            data-wrc-carousel-next
+            aria-label="Следующая команда"
+          >
+            →
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      window.__TIMELINE_EVENTS = [
+        {
+          year: "1900–1920",
+          title: "Истоки гонок на выносливость",
+          body:
+            "В начале 20 века автоспорт только формировался, и длинные гонки стали одним из первых серьёзных испытаний для машин и гонщиков. Тогда автомобили были ненадёжными, часто ломались и не могли долго держать высокую скорость. Поэтому особенно ценились соревнования, где важно было не только быстро ехать, но и добраться до финиша. Именно в этот период появились основы будущих гонок на выносливость.",
+        },
+        {
+          year: "1930–1940",
+          title: "Развитие и перерыв из-за войны",
+          body:
+            "В 1930-х годах гонки на выносливость уже стали важной частью автоспорта. Производители начали использовать такие соревнования для демонстрации технических возможностей своих машин. Однако в 1940-х развитие автоспорта сильно замедлилось из-за Второй мировой войны. После войны гонки постепенно вернулись, и интерес к длинным дистанциям снова начал расти.",
+        },
+        {
+          year: "1950–1960",
+          title: "Укрепление классических марафонов",
+          body:
+            "В 1950-х и 1960-х годах гонки на выносливость стали более организованными и престижными. Особое место заняли суточные марафоны и другие длинные соревнования, где проверялась не только скорость, но и надёжность техники. Именно тогда выносливость окончательно закрепилась как отдельное направление автоспорта. В этот период закладывалась база для будущих международных серий.",
+        },
+        {
+          year: "1970–1980",
+          title: "Рост профессионального уровня",
+          body:
+            "В 1970-х и 1980-х годах гонки на выносливость стали ещё более профессиональными. Команды начали серьёзно подходить к стратегии, расходу топлива, работе шин и надёжности машин. Производители видели в этих соревнованиях отличную возможность показать силу инженерной школы. Автоспорт на выносливость стал не только зрелищным, но и очень технологичным.",
+        },
+        {
+          year: "1990",
+          title: "Переход к современному формату",
+          body:
+            "К концу 20 века гонки на выносливость уже стали важной частью мирового автоспорта. В этот период производители всё чаще использовали такие соревнования как площадку для испытания новых технологий, особенно в области надёжности, аэродинамики и расхода топлива. Постепенно появлялись всё более сложные автомобили, а борьба в гонках становилась не только спортивной, но и инженерной. Однако единой мировой серии всё ещё не существовало, и чемпионат на выносливость оставался разрозненным набором крупных стартов и отдельных категорий.",
+        },
+        {
+          year: "2012",
+          title: "Старт FIA WEC",
+          body:
+            "В 2012 году начинается история чемпионата мира FIA WEC. Он становится новой вершиной гонок на выносливость и объединяет важнейшие этапы под одним названием. С этого момента дисциплина получает официальный мировой статус, а борьба в серии становится более системной и престижной. WEC быстро привлекает крупных производителей, потому что даёт им возможность показывать не только скорость, но и техническое превосходство на длинной дистанции.",
+        },
+        {
+          year: "2013–2019",
+          title: "Гибридная эпоха",
+          body:
+            "В 2010-х годах чемпионат активно развивается и превращается в одну из самых технологичных серий автоспорта. Особенно важной становится гибридная эра, когда производители начинают вкладывать большие ресурсы в эффективность, рекуперацию энергии и экономию топлива. На трассе это приводит к очень плотной и сложной борьбе, где решают не только секунды на круге, но и правильная стратегия на всю гонку. Именно в этот период WEC окончательно закрепляется как главная международная серия гонок на выносливость.",
+        },
+        {
+          year: "2020–2023",
+          title: "Обновление чемпионата",
+          body:
+            "В 2020-х годах WEC вступает в новую фазу развития благодаря смене технических правил и появлению класса Hypercar. Новый регламент делает чемпионат более привлекательным для производителей и помогает вернуть на старт сильные заводские команды. Конкуренция снова становится широкой и разнообразной, а интерес к серии заметно растёт. Чемпионат получает новый импульс и выходит на более высокий уровень по числу участников и зрелищности.",
+        },
+        {
+          year: "2024",
+          title: "Новая сильная эра",
+          body:
+            "Сегодня WEC воспринимается как современный, престижный и очень сложный чемпионат, в котором сочетаются история, технологии и настоящая спортивная выносливость. Класс Hypercar сделал борьбу в топе особенно плотной, а участие крупных производителей вернуло серии статус одной из главных в мировом автоспорте. Гонки по-прежнему остаются испытанием не только для машин, но и для команд, которым нужно сохранять темп, надёжность и концентрацию на протяжении многих часов.",
+        },
+      ];
+    </script>
+    <script src="js/wec-compare.js"></script>
+    <script src="js/timeline.js"></script>
+    <script src="js/wrc-carousel.js"></script>
+  </body>
+</html>

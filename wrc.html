@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ru" class="page-wrc">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WRC — таймлайн</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header-inner">
+        <a class="brand" href="index.html">Начальная страница</a>
+        <a class="back-link" href="index.html">← На главную</a>
+      </div>
+    </header>
+
+    <div class="series-hero-video">
+      <video muted loop autoplay playsinline preload="metadata">
+        <source
+          src="https://upload.wikimedia.org/wikipedia/commons/8/82/WRC_Croatia_2022_-_day_1.webm"
+          type="video/webm"
+        />
+      </video>
+    </div>
+
+    <section class="series-intro">
+      <h1>FIA World Rally Championship</h1>
+      <p>
+        Чемпионат мира по ралли существует с 1973 года. До этого были отдельные гонки вроде
+        Монте-Карло (1911).
+      </p>
+      <p>
+        Пик технической свободы — Group B (1982–1986), закрыта из-за высокой аварийности. Сменившая
+        её Group A (1987–1996) сделала борьбу плотнее и безопаснее.
+      </p>
+    </section>
+
+    <div class="series-body">
+      <p class="section-label">Таймлайн</p>
+
+      <div class="timeline-wrap" data-timeline>
+        <div class="timeline-rail">
+          <div class="timeline-track">
+            <div class="timeline-line" aria-hidden="true"></div>
+            <div class="timeline-dots" data-timeline-dots></div>
+          </div>
+        </div>
+        <article class="timeline-panel" data-timeline-panel></article>
+      </div>
+    </div>
+
+    <section class="f1-compare" aria-labelledby="wrc-compare-title" data-wrc-compare>
+      <div class="f1-compare-inner">
+        <p class="section-label">Техника</p>
+        <h2 id="wrc-compare-title">Тогда и сейчас</h2>
+        <p class="f1-compare-lead">
+          Выберите два года прямо в таблице, чтобы сопоставить разные эпохи WRC.
+          Цифры округлённые, для наглядного сравнения.
+        </p>
+
+        <div class="f1-compare-table-wrap">
+          <table class="f1-compare-table">
+            <caption class="visually-hidden">
+              Сравнение выбранного года с регламентом Rally1 две тысячи двадцать шестого года
+            </caption>
+            <tbody data-wrc-compare-tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrc-teams" aria-labelledby="wrc-teams-title" data-wrc-carousel>
+      <div class="wrc-teams-inner">
+        <p class="section-label">Команды</p>
+        <h2 id="wrc-teams-title">Сильнейшие команды WRC</h2>
+        <div class="wrc-carousel">
+          <button
+            type="button"
+            class="wrc-carousel-btn"
+            data-wrc-carousel-prev
+            aria-label="Предыдущая команда"
+          >
+            ←
+          </button>
+          <div class="wrc-carousel-viewport">
+            <div class="wrc-carousel-track" data-wrc-carousel-track>
+              <article class="wrc-team-slide" data-wrc-carousel-slide>
+                <header class="wrc-team-head">
+                  <img
+                    class="wrc-team-logo"
+                    src="img/wrc-logos/Lancia_Automobiles_logo.jpg"
+                    width="160"
+                    height="56"
+                    alt="Официальный логотип Lancia"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <h3 class="wrc-team-name">Lancia Martini</h3>
+                </header>
+                <div class="wrc-team-about">
+                  <p>
+                    Итальянский бренд Lancia выступал в WRC с культовыми 037 и Delta Integrale под
+                    знаменитой ливреей Martini.
+                  </p>
+                  <p>
+                    Команда задала тон «золотой» эпохе группы A и до сих пор держит рекорд по числу
+                    титулов среди марок в чемпионате мира.
+                  </p>
+                </div>
+                <div class="wrc-team-block">
+                  <h4 class="wrc-team-label">Пилоты</h4>
+                  <p class="wrc-team-pilots">
+                    Юха Канккунен<br />
+                    Мики Бьяджон<br />
+                    Маркку Ален<br />
+                    Анри Тоивонен
+                  </p>
+                </div>
+                <div class="wrc-team-block">
+                  <h4 class="wrc-team-label">Титулы</h4>
+                  <p class="wrc-team-titles">10× чемпионы мира среди марок (рекорд серии)</p>
+                </div>
+              </article>
+              <article class="wrc-team-slide" data-wrc-carousel-slide aria-hidden="true">
+                <header class="wrc-team-head">
+                  <img
+                    class="wrc-team-logo"
+                    src="img/wrc-logos/citroen.svg"
+                    width="160"
+                    height="56"
+                    alt="Официальный логотип Citroën"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <h3 class="wrc-team-name">Citroën Total</h3>
+                </header>
+                <div class="wrc-team-about">
+                  <p>
+                    Заводская команда Citroën вместе с партнёром Total долгие годы была эталоном
+                    скорости и стабильности в WRC.
+                  </p>
+                  <p>
+                    На машинах Xsara, C4 и DS3 команда выигрывала титулы в зачёте марок и пилотов,
+                    опираясь на ярких звёзд эпохи World Rally Car.
+                  </p>
+                </div>
+                <div class="wrc-team-block">
+                  <h4 class="wrc-team-label">Пилоты</h4>
+                  <p class="wrc-team-pilots">
+                    Себастьен Лёб<br />
+                    Себастьен Ожье<br />
+                    Андреас Миккельсен
+                  </p>
+                </div>
+                <div class="wrc-team-block">
+                  <h4 class="wrc-team-label">Титулы</h4>
+                  <p class="wrc-team-titles">8× чемпионы мира среди марок</p>
+                </div>
+              </article>
+              <article class="wrc-team-slide" data-wrc-carousel-slide aria-hidden="true">
+                <header class="wrc-team-head">
+                  <img
+                    class="wrc-team-logo"
+                    src="img/wrc-logos/toyota.svg"
+                    width="160"
+                    height="56"
+                    alt="Официальный логотип Toyota"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <h3 class="wrc-team-name">Toyota Gazoo Racing WRT</h3>
+                </header>
+                <div class="wrc-team-about">
+                  <p>
+                    TOYOTA GAZOO Racing World Rally Team — заводская команда Toyota в WRC с 2017 года,
+                    базируется в Финляндии и выступает на раллийной Yaris.
+                  </p>
+                  <p>
+                    После возвращения марки в чемпионат команда быстро стала лидером эры Rally1 и
+                    регулярно борется за титулы среди марок и пилотов.
+                  </p>
+                </div>
+                <div class="wrc-team-block">
+                  <h4 class="wrc-team-label">Пилоты</h4>
+                  <p class="wrc-team-pilots">
+                    Себастьен Ожье<br />
+                    Калле Рованперя<br />
+                    Отт Тянак<br />
+                    Эльфин Эванс
+                  </p>
+                </div>
+                <div class="wrc-team-block">
+                  <h4 class="wrc-team-label">Титулы</h4>
+                  <p class="wrc-team-titles">6× чемпионы мира среди марок (2018, 2021–2025)</p>
+                </div>
+              </article>
+              <article class="wrc-team-slide" data-wrc-carousel-slide aria-hidden="true">
+                <header class="wrc-team-head">
+                  <img
+                    class="wrc-team-logo"
+                    src="img/wrc-logos/ford.svg"
+                    width="160"
+                    height="56"
+                    alt="Официальный логотип Ford"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <h3 class="wrc-team-name">M-Sport Ford World Rally Team</h3>
+                </header>
+                <div class="wrc-team-about">
+                  <p>
+                    Британская M-Sport из Кокермауса готовит раллийные Ford для WRC уже много сезонов
+                    подряд.
+                  </p>
+                  <p>
+                    Это единственная крупная частная структура в современном пелотоне рядом с
+                    заводскими командами и постоянным заводским бюджетом Ford.
+                  </p>
+                </div>
+                <div class="wrc-team-block">
+                  <h4 class="wrc-team-label">Пилоты</h4>
+                  <p class="wrc-team-pilots">
+                    Маркус Грёнхольм<br />
+                    Микко Хирвонен<br />
+                    Отт Тянак<br />
+                    Себастьен Ожье<br />
+                    Эльфин Эванс
+                  </p>
+                </div>
+                <div class="wrc-team-block">
+                  <h4 class="wrc-team-label">Титулы</h4>
+                  <p class="wrc-team-titles">2× чемпионы мира среди марок (Ford, 2006 и 2007)</p>
+                </div>
+              </article>
+              <article class="wrc-team-slide" data-wrc-carousel-slide aria-hidden="true">
+                <header class="wrc-team-head">
+                  <img
+                    class="wrc-team-logo"
+                    src="img/wrc-logos/hyundai.svg"
+                    width="160"
+                    height="56"
+                    alt="Официальный логотип Hyundai"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <h3 class="wrc-team-name">Hyundai Shell Mobis World Rally Team</h3>
+                </header>
+                <div class="wrc-team-about">
+                  <p>
+                    Полностью заводская команда Hyundai в WRC с 2014 года с штабом в Германии и
+                    спонсорством Shell и Mobis.
+                  </p>
+                  <p>
+                    Команда строит конкурентоспособные i20 для всех покрытий и дважды побеждала в
+                    зачёте марок (2019 и 2020).
+                  </p>
+                </div>
+                <div class="wrc-team-block">
+                  <h4 class="wrc-team-label">Пилоты</h4>
+                  <p class="wrc-team-pilots">
+                    Тьерри Невиль<br />
+                    Отт Тянак<br />
+                    Дани Сордо<br />
+                    Андреас Миккельсен
+                  </p>
+                </div>
+                <div class="wrc-team-block">
+                  <h4 class="wrc-team-label">Титулы</h4>
+                  <p class="wrc-team-titles">2× чемпионы мира среди марок (2019, 2020)</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="wrc-carousel-btn"
+            data-wrc-carousel-next
+            aria-label="Следующая команда"
+          >
+            →
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      window.__TIMELINE_EVENTS = [
+        {
+          year: "1911",
+          title: "Первое Rallye Monte-Carlo",
+          body: [
+            "В 1911 году прошло первое Rallye Monte-Carlo. Это стало одним из символов будущего раллийного мира.",
+            "Гонка требовала выносливости, точности и умения работать на длинной дистанции. Monte Carlo быстро получило статус престижного и сложного соревнования.",
+          ],
+        },
+        {
+          year: "1950–1960",
+          title: "Становление ралли как дисциплины",
+          body: [
+            "В эти десятилетия ралли превращалось из отдельных стартов в международную дисциплину. Производители использовали гонки для проверки надёжности машин.",
+            "Соревнования становились длиннее и профессиональнее. Закрепилась идея: побеждает не только пилот, но и надёжная техника с грамотной стратегией.",
+          ],
+        },
+        {
+          year: "1973",
+          title: "Запуск чемпионата мира WRC",
+          body: [
+            "FIA официально запустила чемпионат мира по ралли WRC. Ралли перестало быть набором гонок и стало единым чемпионатом с заводскими командами и борьбой за титулы.",
+            "Машины первых сезонов были близки к серийным: связь с дорожными автомобилями, огромные дистанции, темп, надёжность, пейс-ноуты штурмана и выдержка. Успех строился на характере экипажа и техники.",
+          ],
+        },
+        {
+          year: "1982",
+          title: "Начало эпохи Group B",
+          body: [
+            "Началась эра Group B. Машины: Audi Quattro, Peugeot 205 T16, Lancia Delta S4, Ford RS200.",
+            "Мощность, полный привод и техническая свобода почти не ограничивались. Автомобили были очень быстрыми, но опасными для существовавшего уровня безопасности.",
+          ],
+        },
+        {
+          year: "1986",
+          title: "Закрытие Group B",
+          body: [
+            "Group B закрыли после тяжёлых аварий и трагедий. FIA признала, что скорость и зрелищность опередили безопасность.",
+            "Ралли перешло в новую фазу, где нельзя было ставить только на мощность и риск.",
+          ],
+        },
+        {
+          year: "1987–1996",
+          title: "Эра Group A",
+          body: [
+            "После Group B ввели регламент Group A. Машины снова стали ближе к серийным. Борьба стала менее экстремальной, но более плотной.",
+            "Решали настройка, стратегия, стабильность и работа команды. Главные модели: Lancia Delta Integrale, Toyota Celica GT-Four, Subaru Impreza, Mitsubishi Lancer Evolution.",
+            "К концу периода WRC окончательно стал мировым чемпионатом с мощными заводскими программами. Главные пилоты эпохи: Карлос Сайнс, Юха Канккунен, Томми Мякинен, Колин Макрей.",
+          ],
+        },
+        {
+          year: "1997–2010",
+          title: "Эра WRC и доминирование Лёба",
+          body:
+            "В 1997 году ввели правила WRC: турбомоторы 2.0 л, активные дифференциалы. С 2004 по 2010 год Себастьен Лёб выиграл семь титулов подряд. Заводские Citroën, Ford и Subaru определили лицо эпохи.",
+        },
+        {
+          year: "2017–2025",
+          title: "Гибриды и эра Рованперы",
+          body:
+            "В 2017 году мощность выросла до 380 л.с., машины стали шире. С 2022 года — гибридные установки (100 кВт). Калле Рованпера — самый молодой чемпион WRC (2022, 22 года), повторил титул в 2023-м.",
+        },
+      ];
+    </script>
+    <script src="js/timeline.js"></script>
+    <script src="js/wrc-compare.js"></script>
+    <script src="js/wrc-carousel.js"></script>
+  </body>
+</html>
